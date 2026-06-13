@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "sessionstack": "https://www.sessionstack.com/vocab#",
+    "aid": "sessionstack:aid",
+    "baseURL": "sessionstack:baseURL",
+    "humanURL": "sessionstack:humanURL",
+    "sessionReplay": "sessionstack:sessionReplay",
+    "userMonitoring": "sessionstack:userMonitoring",
+    "digitalExperience": "sessionstack:digitalExperience",
+    "coBrowsing": "sessionstack:coBrowsing",
+    "errorTracking": "sessionstack:errorTracking",
+    "sessionRecording": "sessionstack:sessionRecording",
+    "sessionExport": "sessionstack:sessionExport",
+    "userBehaviorAnalytics": "sessionstack:userBehaviorAnalytics"
+  },
+  "@type": "SoftwareApplication",
+  "@id": "https://www.sessionstack.com",
+  "name": "SessionStack",
+  "description": "AI-driven session replay and digital experience analytics platform enabling product and support teams to record, replay, and analyze real user sessions on web applications.",
+  "url": "https://www.sessionstack.com",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.sessionstack.com/pricing"
+  },
+  "documentation": {
+    "@type": "TechArticle",
+    "url": "https://docs.sessionstack.com/docs/overview",
+    "name": "SessionStack Documentation"
+  },
+  "potentialAction": [
+    {
+      "@type": "Action",
+      "name": "sessionReplay",
+      "description": "Record and replay real user sessions on web applications"
+    },
+    {
+      "@type": "Action",
+      "name": "sessionExport",
+      "description": "Export session data via REST API (Scale plan and above)"
+    },
+    {
+      "@type": "Action",
+      "name": "coBrowsing",
+      "description": "Live collaborative troubleshooting sessions"
+    },
+    {
+      "@type": "Action",
+      "name": "errorTracking",
+      "description": "Track and replay sessions associated with errors"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "url": "https://docs.sessionstack.com/reference/sessions",
+    "name": "SessionStack REST API Reference"
+  },
+  "sameAs": [
+    "https://github.com/sessionstack",
+    "https://medium.com/sessionstack-blog",
+    "https://x.com/sessionstack",
+    "https://www.linkedin.com/company/sessionstack"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "SessionStack",
+    "url": "https://www.sessionstack.com"
+  }
+}
