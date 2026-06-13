@@ -1,0 +1,83 @@
+name: SessionStack FinOps
+description: >
+  FinOps Framework FOCUS-aligned cost visibility reference for SessionStack
+  API and platform usage. SessionStack pricing is seat-based and plan-tiered
+  rather than purely consumption-based, but session volume, data retention
+  duration, and REST API usage (Scale plan and above) are the primary cost
+  drivers for engineering and support teams integrating SessionStack into
+  their workflows.
+specificationVersion: '1.0'
+focus:
+  provider: SessionStack
+  service: Session Replay and Digital Experience Analytics
+  currency: USD
+
+costDimensions:
+  - name: Subscription Tier
+    description: >
+      Monthly subscription fee determined by plan tier (Free $0, Launch $79,
+      Scale $129). Annual billing may provide discounts. Enterprise contracts
+      are negotiated individually.
+    unit: USD/month
+    tiers:
+      - tier: Free
+        unitPrice: 0
+        includedSeats: 3
+      - tier: Launch
+        unitPrice: 79
+        includedSeats: 5
+      - tier: Scale
+        unitPrice: 129
+        includedSeats: 10
+      - tier: Enterprise
+        unitPrice: custom
+        includedSeats: custom
+
+  - name: Session Volume
+    description: >
+      The number of user sessions recorded per month is the primary usage
+      metric. High-traffic applications may require volume add-ons or
+      Enterprise contracts to accommodate recording needs without sampling.
+    unit: sessions/month
+    notes: >
+      Session limits per plan tier are not publicly documented; contact
+      SessionStack to confirm monthly session caps before scaling.
+
+  - name: Data Retention
+    description: >
+      Longer session data retention (replay history) may be included in
+      higher tiers or available as an add-on for compliance and long-term
+      support workflows.
+    unit: days
+    notes: Retroactive data history is available across all tiers.
+
+  - name: Additional Seats
+    description: >
+      Team seats beyond those included in a plan tier may be purchasable
+      as add-ons, with per-seat pricing dependent on the active plan.
+    unit: USD/seat/month
+    notes: Contact SessionStack sales for per-seat overage pricing.
+
+  - name: REST API Data Export
+    description: >
+      Access to REST API data export endpoints is gated at the Scale plan
+      ($129/month). Teams requiring programmatic session export for BI
+      tools, data warehouses, or support platforms must be on Scale or above.
+    unit: feature
+    plan: Scale
+    minimumCost: 129
+
+costOptimization:
+  - recommendation: Use the Free plan for evaluation and non-production environments.
+  - recommendation: >
+      Choose the Scale plan only when REST API data export is required for
+      integration with external support or analytics systems.
+  - recommendation: >
+      Negotiate Enterprise contracts for high-session-volume applications
+      to avoid per-session overage costs.
+  - recommendation: >
+      Monitor session recording volume monthly and enable selective recording
+      (sampling) on high-traffic pages to stay within plan limits.
+  - recommendation: >
+      Consolidate team access under fewer seats where workflow allows to
+      avoid seat-based cost growth.

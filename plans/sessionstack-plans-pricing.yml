@@ -1,0 +1,80 @@
+name: SessionStack Plans and Pricing
+description: >
+  SessionStack offers three tiers — Free, Launch, and Scale — differentiated
+  by team seats, data export capabilities, and collaboration features. The Scale
+  plan unlocks REST API data export. Enterprise and custom volume contracts are
+  available on request.
+specificationVersion: '0.1'
+plans:
+  - name: Free
+    description: >
+      Entry-level plan for individuals and small teams exploring session replay.
+      Includes pixel-perfect session replay, co-browsing, dev tools, tagless
+      autocapture, retroactive data history, sensitive data handling, basic
+      event filters, user segments, and trends.
+    url: https://www.sessionstack.com/pricing
+    price: 0
+    currency: USD
+    period: month
+    seats: 3
+    features:
+      - Pixel-perfect session replay
+      - Co-browsing
+      - Developer tools
+      - Tagless autocapture
+      - Retroactive data history
+      - Sensitive data handling
+      - Basic event filters
+      - User segments and trends
+      - Unlimited projects
+
+  - name: Launch
+    description: >
+      Growth plan for teams that need expanded collaboration on session data.
+      Includes all Free plan features plus enhanced team collaboration
+      capabilities and additional seats.
+    url: https://www.sessionstack.com/pricing
+    price: 79
+    currency: USD
+    period: month
+    seats: 5
+    features:
+      - All Free plan features
+      - Enhanced team collaboration
+      - Additional team seats (5 included)
+
+  - name: Scale
+    description: >
+      Full-featured plan for larger teams and organizations requiring REST API
+      data export, advanced analytics, and expanded seat counts. Designed for
+      e-commerce and SaaS companies needing deep integration with support and
+      analytics workflows.
+    url: https://www.sessionstack.com/pricing
+    price: 129
+    currency: USD
+    period: month
+    seats: 10
+    features:
+      - All Launch plan features
+      - Data export via REST API
+      - 10 team seats included
+      - Advanced event filters
+      - Priority support
+
+  - name: Enterprise
+    description: >
+      Custom pricing for high-volume organizations requiring tailored session
+      volumes, extended data retention, additional seats, custom SLAs, and
+      dedicated support. Contact SessionStack sales for a quote.
+    url: https://www.sessionstack.com/pricing
+    price: 0
+    currency: USD
+    period: custom
+    seats: custom
+    features:
+      - All Scale plan features
+      - Custom session volume
+      - Extended data retention
+      - Custom SLAs
+      - Dedicated support
+      - Volume discounts

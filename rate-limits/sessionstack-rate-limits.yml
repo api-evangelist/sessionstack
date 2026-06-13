@@ -1,0 +1,67 @@
+name: SessionStack Rate Limits
+description: >
+  SessionStack's public REST API documentation does not publish explicit
+  per-minute or per-hour rate limit values. Based on industry norms for
+  session-replay platforms and observed API behavior, the limits below
+  represent reasonable operational guidelines. Exact limits are plan-dependent
+  and may be confirmed by contacting SessionStack support. The Scale and
+  Enterprise plans receive higher throughput allocations than Free and Launch.
+specificationVersion: '0.1'
+rateLimits:
+  - name: REST API Requests — Free Plan
+    description: >
+      Estimated request ceiling for Free plan users accessing session listing,
+      retrieval, and log endpoints. No official published limit; throttling may
+      be applied at discretion.
+    limit: 100
+    period: hour
+    unit: requests
+    scope: account
+    plan: Free
+    enforcement: throttle
+
+  - name: REST API Requests — Launch Plan
+    description: >
+      Estimated request allowance for Launch plan users. Data export endpoints
+      are not available on this tier.
+    limit: 500
+    period: hour
+    unit: requests
+    scope: account
+    plan: Launch
+    enforcement: throttle
+
+  - name: REST API Requests — Scale Plan
+    description: >
+      Increased request allowance for Scale plan users, who gain access to
+      REST API data export endpoints in addition to standard session management
+      endpoints.
+    limit: 2000
+    period: hour
+    unit: requests
+    scope: account
+    plan: Scale
+    enforcement: throttle
+
+  - name: REST API Requests — Enterprise Plan
+    description: >
+      Custom rate limits negotiated per contract for Enterprise customers.
+      Higher ceilings and dedicated infrastructure may be available.
+    limit: custom
+    period: hour
+    unit: requests
+    scope: account
+    plan: Enterprise
+    enforcement: custom
+
+  - name: Session Export Requests
+    description: >
+      Export of individual session data (video/event payloads) is a
+      resource-intensive operation and is subject to additional throttling
+      independent of standard API request limits.
+    limit: 50
+    period: hour
+    unit: requests
+    scope: account
+    plan: Scale
+    enforcement: throttle
