@@ -1,7 +1,7 @@
 {
   "blogURL": "https://medium.com/sessionstack-blog",
   "rssURL": "https://medium.com/feed/sessionstack-blog",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Meet SessionStackAI: the Session Replay Add-on We Knew You Needed",
@@ -133,5 +133,13 @@
         "user-segmentation"
       ]
     }
-  ]
+  ],
+  "repo": "sessionstack",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/sessionstack",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
