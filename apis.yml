@@ -12,7 +12,7 @@ description: >
   retroactive data history to ensure no user interaction is missed, and supports
   co-browsing for live collaborative troubleshooting sessions.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/sessionstack/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -36,7 +36,7 @@ apis:
       individual sessions, delete sessions, export session data, and add
       log entries to sessions. The Scale plan and above unlock data export via
       REST API.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.sessionstack.com/reference/sessions
     baseURL: https://api.sessionstack.com
     tags:
